@@ -1,0 +1,1 @@
+var baseUrl = "http://smartcampus.ctd.ifsp.edu.br/estacao";

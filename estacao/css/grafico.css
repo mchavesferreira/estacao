@@ -1,0 +1,84 @@
+/* slide de cards no mobile*/
+.card-slide {
+	flex-wrap: nowrap;
+    /* white-space: nowrap; */
+    overflow-x: auto;
+}
+.card-slide-item {
+    display: inline-block;
+    float: none;
+}
+.card-slide-item:not(:first-child):not(:last-child) {
+    padding: 0px 0px;
+}
+
+/* estilo dos cards */
+.estilo-card-default .card-sensor {
+	background: #ededed;
+	/*background: #09d1e3;*/
+	border-radius: 5px;
+	padding: 5px;
+	cursor: pointer;
+	/*border-bottom: 5px solid #09d1e3;*/
+}
+.estilo-card-default .card-sensor-img {
+	width: 60px;
+}
+.estilo-card-default .card-sensor-tag {
+	font-size: 11px;
+    color: #bdbdbd;
+}
+.estilo-card-default .card-sensor-title {
+	font-size: 21px;
+    font-weight: bold;
+    color: #989898;
+}
+.estilo-card-default .card-sensor-subtitle {
+	font-size: 13px;
+    color: #a8a8a8;
+    /*opacity: 0.8;*/
+    line-height: 1.2;
+}
+
+/* estilo dos cards - focus */
+.estilo-card-selected > .card-sensor {
+	background: #6a3093;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(140deg, #6a3093, #a044ff);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(140deg, #6a3093, #a044ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 5px;
+	padding: 5px;
+}
+.estilo-card-selected .card-sensor-img {
+	width: 50px;
+}
+.estilo-card-selected .card-sensor-tag {
+	font-size: 11px;
+    color: #ffffff60;
+}
+.estilo-card-selected .card-sensor-title {
+	font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.estilo-card-selected .card-sensor-subtitle {
+	font-size: 13px;
+    color: #ffffff85;
+    /*opacity: 0.8;*/
+    line-height: 1.2;
+}
+
+
+/* estilo do card de filtro */
+.box-filtrar-titulo-sensor {
+	color: #6a3093;
+	font-weight: bold;
+}
+.btn-filtrar {
+	background: #6a3093;
+	color: white;
+}
+.btn-filtrar:hover, .btn-filtrar:focus {
+	background: #6a3093;
+	color: white;
+	opacity: 0.8;
+}
